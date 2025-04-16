@@ -26,9 +26,11 @@ export default function App() {
     };
 
     return (
-        <div>
-            <ParamEditor ref={editorRef} params={params} model={model} />
-            <button onClick={handleSave}>Сохранить</button>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <div>
+                <ParamEditor ref={editorRef} params={params} model={model} />
+                <button onClick={handleSave}>Сохранить</button>
+            </div>
         </div>
     );
 }
